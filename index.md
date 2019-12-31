@@ -1,0 +1,6 @@
+[[empty/index]]
+[[memo/index]]
+[[vim/index]]
+[[vimwiki/index]]
+[[go/index]]
+[[os/index]]
