@@ -15,3 +15,4 @@
 [[How to move between {}]]
 [[How to move file below cursor]]
 [[How to delete last char of line]]
+[[How to press short cut of enter key]]
