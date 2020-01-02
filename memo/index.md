@@ -5,4 +5,3 @@ right ctrl and left ctrl diffrent
 json validation
 Add relative rownum
 Add shortcut to add bottom line for memo
-Add git push after git commit
