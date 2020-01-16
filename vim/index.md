@@ -17,3 +17,4 @@
 [[How to delete last char of line]]
 [[How to press short cut of enter key]]
 [[How to yank rest charactors of line]]
+[[How to delete all buffer]]
