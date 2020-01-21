@@ -18,3 +18,4 @@
 [[How to press short cut of enter key]]
 [[How to yank rest charactors of line]]
 [[How to delete all buffer]]
+[[How to change :echo has("python3") to 1]]

@@ -1,0 +1,34 @@
+# How to change :echo has("python3") to 1
+
+    # check python3 support
+    :echo has("python3") 
+    $vim --version | grep "python"
+    
+    # install vim support python3
+    $git clone https://github.com/vim/vim.git
+    $cd vim
+    $cd src
+    $./configure --with-features=huge \
+            --enable-multibyte \
+            --enable-rubyinterp=yes \
+            --enable-python3interp=yes \
+            --with-python3-config-dir=$(python3-config --configdir) \
+            --enable-perlinterp=yes \
+            --enable-luainterp=yes \
+            --enable-gui=gtk2 \
+            --enable-cscope \
+            --prefix=/usr/local
+    $make VIMRUNTIMEDIR=/usr/local/share/vim/vim82        
+    $make
+    $sudo make install 
+
+    # A newly built vim will be installed under "/usr/local". 
+    # But change /etc/paths to /usr/local/bin top  
+
+## See also
+
+[seulcoding :: python3 지원하는 vim 설치하기 (os x)](https://seulcode.tistory.com/212)
+[Building Vim from source · ycm-core/YouCompleteMe Wiki · GitHub](https://github.com/ycm-core/YouCompleteMe/wiki/Building-Vim-from-source) 
+[vim/README_mac.txt at master · vim/vim · GitHub](https://github.com/vim/vim/blob/master/READMEdir/README_mac.txt)
+[MacVim과 Vim 8 설치](https://nolboo.kim/blog/2016/09/16/vim-8-upgrade/)
+[Mac에서 Path 설정하기 :: MHLab Blog](https://elfinlas.tistory.com/266)
